@@ -1,7 +1,7 @@
-process.env.TARGET_URL = 'http://www.jorte.com/';
+process.env.TARGET_URL = 'http://localhost/';
 
 console.time('timer');
-require("../src/index").handler({},
+require("./index").handler({},
   { invokeid: 'invokeid' },
   (err, data) => {
     if (err) return console.error(err);
